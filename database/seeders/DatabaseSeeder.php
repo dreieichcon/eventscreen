@@ -29,5 +29,9 @@ class DatabaseSeeder extends Seeder
             "password" => Hash::make($password),
         ]);
         $this->command->info("  created super-admin $admin->email with password '$password'");
+
+        $this->call([
+            BuconSeeder::class,
+        ]);
     }
 }

@@ -1,1 +1,1 @@
-<option selected disabled value="">+++ bitte auswählen +++</option>
+<option selected disabled value="">+++ please select an item +++</option>

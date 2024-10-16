@@ -4,7 +4,6 @@
 @section("content")
     <h1>Hello World</h1>
 
-    Tetetete
 
     <div class="row">
 
