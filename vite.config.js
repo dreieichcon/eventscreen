@@ -8,6 +8,8 @@ export default defineConfig({
                 'resources/css/app.css',
                 'resources/js/app.js',
                 'resources/js/client_test.js',
+		'resources/js/bootstrap.js',
+		'resources/js/echo.js'
             ],
             refresh: true,
         }),
