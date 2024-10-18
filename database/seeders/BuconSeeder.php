@@ -32,7 +32,7 @@ class BuconSeeder extends Seeder
 
         //load tsv
         $path = "database/seeders/data/";
-        $file = "bucon2.tsv";
+        $file = "bucon3.tsv";
 
         if (is_file($path . $file)) {
             $this->command->info("file $file found\n");

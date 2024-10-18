@@ -3,6 +3,7 @@ if (!isset($room)) {
     $room = new \App\Models\Room(); //for autocompletion to work in IDE
 }
 
+$now = \Carbon\Carbon::now();
 $panels = $room->panel->sortBy('start');
 $current_panel = $panels->firstWhere('active', true) ?? new \App\Models\Panel();
 $next_panel = $panels->skipUntil(fn($panel) => $panel->active)->skip(1)->first() ?? new \App\Models\Panel();
