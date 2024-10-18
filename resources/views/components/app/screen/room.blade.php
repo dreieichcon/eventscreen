@@ -37,7 +37,7 @@ $next_panel = $panels->skipUntil(fn($panel) => $panel->active)->skip(1)->first()
                 <td>
                     <h4>
                         {{ $current_panel->title }}<br>
-                        <i>{{ $current_panel->type }}</i><br>
+                        <i>{{ $current_panel->host }}</i><br>
                         @if(!is_null($current_panel->end))
 
                         @endif
@@ -53,7 +53,7 @@ $next_panel = $panels->skipUntil(fn($panel) => $panel->active)->skip(1)->first()
                 <td>
                     <h4>
                         {{ $next_panel->title }}<br>
-                        <i>{{ $next_panel->type }}</i><br>
+                        <i>{{ $next_panel->host }}</i><br>
 
                     </h4>
                 </td>

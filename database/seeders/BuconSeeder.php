@@ -59,8 +59,8 @@ class BuconSeeder extends Seeder
                 ]);
             }
 
-            $start = Carbon::create("18.10.2024 " . $line_[0]);
-            $end = Carbon::create("18.10.2024 " . $line_[1]);
+            $start = Carbon::create("19.10.2024 " . $line_[0]);
+            $end = Carbon::create("19.10.2024 " . $line_[1]);
 
             Panel::create([
                 "start" => $start,
