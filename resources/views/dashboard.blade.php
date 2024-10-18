@@ -9,7 +9,7 @@
                     <h3 class="card-title">Connected Instances</h3>
                 </div>
                 <div class="card-body">
-
+                    not implemented yet
                 </div>
                 <div class="card-footer">
                         <form action="/force_reload" method="POST">

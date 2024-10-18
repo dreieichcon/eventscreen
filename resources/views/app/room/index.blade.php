@@ -33,7 +33,11 @@
                                         <tbody>
                                         @foreach($room->panel->sortBy("start") as $panel)
                                             <tr>
-                                                <th>{{ $panel->name }}</th>
+                                                <td>
+                                                    {{ $panel->title }}<br>
+                                                    {{ $panel->host }}<br>
+                                                    {{ $panel->type }}
+                                                </td>
                                                 <td>{{ $panel->start->format("d.m. H:i") }}</td>
                                                 <td>{{ $panel->end->format("d.m. H:i") }}</td>
                                             </tr>

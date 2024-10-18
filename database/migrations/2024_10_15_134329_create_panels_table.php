@@ -12,6 +12,7 @@ return new class extends Migration {
             $table->string('title');
             $table->string('host')->nullable();
             $table->string('type')->nullable();
+            $table->string("content_note")->nullable();
             $table->string('room_id');
             $table->longText('description')->nullable();
             $table->dateTime('start');

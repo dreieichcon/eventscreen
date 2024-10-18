@@ -40,8 +40,9 @@ class RoomController extends Controller
 
     public function show(Room $room)
     {
-        $this->check_permission("room.show");
-        return redirect()->route('room.edit', $room);
+        return view("app.room.public", [
+            'room' => $room
+        ]);
     }
 
     public function edit(Room $room){

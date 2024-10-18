@@ -20,7 +20,7 @@
 
 
 
-
+    <script src="{{ asset("/assets/js/custom.js") }}"></script>
     @if(config("app.env") == "local")
         @vite("/resources/js/local.js")
     @endif

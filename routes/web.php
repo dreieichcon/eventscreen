@@ -4,11 +4,13 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    $rooms = \App\Models\Room::all();
+    $rooms = \App\Models\Room::orderBy("name")->get();
     return view('welcome', [
         "rooms" => $rooms
     ]);
 });
+
+Route::get("/r/{room}", [\App\Http\Controllers\RoomController::class, "show"]);
 
 
 Route::get('/dashboard', function () {
